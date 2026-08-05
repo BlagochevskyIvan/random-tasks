@@ -3,10 +3,10 @@ from typing import List
 
 class Solution:
     def findMissingElements(self, nums: List[int]) -> List[int]:
-        nums = nums.sort()
+        nums.sort()
         arr = []
-        i = range(nums[::-1])
-        for j in range(i):
+        i = nums[-1]
+        for j in range(1, 1+i):
             arr.append(j)
         for elem in nums:
             arr.remove(elem)
