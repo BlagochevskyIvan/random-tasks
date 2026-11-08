@@ -1,4 +1,6 @@
 from bisect import bisect_left
+
+
 class Solution:
     def findTheDistanceValue(self, arr1: list[int], arr2: list[int], d: int) -> int:
         arr2.sort()
